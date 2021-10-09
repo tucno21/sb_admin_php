@@ -1,55 +1,41 @@
 <?php
-//MODOS DE  DASHBOARD // 1 = true, 0 = false
-$CustomizeAdminLTE =
-    [
-        'darkMode' => [0 => ' dark-mode'], //modo oscuro
-        'layoutFixed' => [1 => ' layout-fixed'], //sidebar fijo
-        'navbarFixed' => [1 => ' layout-navbar-fixed'], //menu superior fijo
-        'reduceBody' => [0 => ' text-sm'], //reducir todo el body
-        'sidebarCollapse' => [0 => ' sidebar-collapse'], //ocultar sidebar
-        'sidebaMini' => [1 => ' sidebar-mini'], //Sidebar reducido -- DEBE estar activo 'sidebarCollapse'
-        'sidebaMini-md' => [0 => ' sidebar-mini-md'], //Sidebar reducido tablet-- DEBE estar activo 'sidebarCollapse'
-        'sidebaMini-xs' => [0 => ' sidebar-mini-xs'], //Sidebar reducido celular-- DEBE estar activo 'sidebarCollapse'
-    ];
+//MODOS DE  DASHBOARD
+$sidebarNormal = ['m1' => '', 'm2' => 'toggle-sidebar'];
+$sidebarNoFixed = ['m1' => 'static-sidebar', 'm2' => 'toggle-sidebar'];
+$sidebarIcon = ['m1' => 'sidebar_minimize', 'm2' => 'toggle-sidebar'];
+$sidebarOculto = ['m1' => 'overlay-sidebar', 'm2' => 'sidenav-overlay-toggler'];
+//seleccione una de arriba
+$ModoSidebar = ['wrapper' => $sidebarNormal['m1'], 'toggle' => $sidebarNormal['m2']];
 
-//'nav-flat' == para sub menus amplios, 'nav-legacy' = menu sin seleccion boton, 
-//'nav-compact' sibebar comprimido, 'text-sm' = sidebar con texto pequeño
-$navSidebar = '';
-//navbar pequeño SLIMSCRO  , 'text-sm' = menu superior pequeño
-$navSmoll = '';
-//navbar Logo pequeño SLIMSCRO  , 'text-sm' = menu superior pequeño
-$navSmollLogo = '';
-
-//COLOR NAVBAR
-//navbar-white navbar-light = BLANCO -- ORININAL
-//'navbar-white'(color de fondo) 'navbar-light'(color letra light=negro, dark=blanco)
-//NEGRO(navbar-dark), PLOMO(navbar-gray), PLOMO oscuro(navbar-gray-dark), VERDE(navbar-success)
-//CELESTE FUERTE(navbar-info), AZUL MARINO(navbar-navy), AZUL(navbar-primary)
-//rojo(navbar-danger), morado fuerte(navbar-indigo), morado(navbar-purple), rosado(navbar-pink), amarillo(navbar-warning),
-$navColor = 'navbar-dark navbar-dark';
+//blue, red, dark, purple, light-blue, green, orange, white, dark2, blue2, purple2, light-blue2, green2, orange2, red2
+$colorBase = 'dark2';
+//COLOR Logo Header
+$colorLogoHeader = $colorBase;
+//COLOR NAV
+$colorNav = $colorBase;
 //COLOR SIDEBAR
-//sidebar-dark-primary = NEGRO
-//sidebar-light-primary = BLANCO
-//Se puede cambiar la ultima palabra
-$sidebarColor = 'sidebar-dark-primary';
-
+$colorSidebar = $colorBase;
+//COLOR BODY //bg2 = blanco // bg1 = blanco oscuro // bg3 = plomo // dark // 
+$colorBody = '';
 
 
 // DATOS GENERALES ADMIN
-$title = 'AdminLTE 3 | Blank Page';
+$title = 'Atlantis';
 $mainLink = '/';
-$logoAdmin = '../public/backend_adminlte/dist/img/AdminLTELogo.png';
+$logoAdmin = '../public/logo/logo.png';
 
 //VER ICONOS DE MENSAJE Y NOTIFICACION
 $navSearch = false;
 $navMessages = false;
 $navNotifications = false;
+$navActions = false;
 
 
 //DATOS DEL USUARIO ADMIN
 $userName = 'Carlos Tucno Vasquez';
 $profile = 'Administrador';
-$photoUser = '../public/backend_adminlte/dist/img/user2-160x160.jpg';
+$photoUser = '../public/backAtlaintis/assets/img/profile.jpg';
+$emailUser = 'cc@bb.com';
 
 //MENU CERRAR O PERFIL DE ADMINISTRADOR
 $menuSession = [
@@ -139,14 +125,19 @@ $linksSidebar = [
 $linkURL = '../public';
 
 $linksCss = [
-    'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback',
-    $linkURL . '/backend_adminlte/plugins/fontawesome-free/css/all.min.css',
-    $linkURL . '/backend_adminlte/dist/css/adminlte.min.css',
+    'https://fonts.googleapis.com/css?family=Lato:300,400,700,900',
+    $linkURL . '/backAtlaintis/assets/css/bootstrap.min.css',
+    $linkURL . '/backAtlaintis/assets/css/atlantis.css',
+    $linkURL . '/backAtlaintis/assets/css/demo.css',
 ];
 
 $linksScript = [
-    $linkURL . '/backend_adminlte/plugins/jquery/jquery.min.js',
-    $linkURL . '/backend_adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js',
-    $linkURL . '/backend_adminlte/dist/js/adminlte.min.js',
-    $linkURL . '/backend_adminlte/dist/js/demo.js',
+    $linkURL . '/backAtlaintis/assets/js/plugin/webfont/webfont.min.js',
+    $linkURL . '/backAtlaintis/assets/js/core/jquery.3.2.1.min.js',
+    $linkURL . '/backAtlaintis/assets/js/core/popper.min.js',
+    $linkURL . '/backAtlaintis/assets/js/core/bootstrap.min.js',
+    $linkURL . '/backAtlaintis/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js',
+    $linkURL . '/backAtlaintis/assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js',
+    $linkURL . '/backAtlaintis/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js',
+    $linkURL . '/backAtlaintis/assets/js/atlantis.min.js',
 ];
