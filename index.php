@@ -1,7 +1,7 @@
 <?php
 //cabeza de la pplantilla
-include 'adminLte/AdminLte.php';
-include 'adminLte/head.php';
+include 'AtlantisDash/AtlantisDash.php';
+include 'AtlantisDash/head.php';
 ?>
 
 <!-- Content Wrapper. Contains page content -->
@@ -60,5 +60,5 @@ include 'adminLte/head.php';
 
 <?php
 //cabeza de la pplantilla
-include 'adminLte/footer.php';
+include 'AtlantisDash/footer.php';
 ?>
