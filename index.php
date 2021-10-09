@@ -1,7 +1,7 @@
 <?php
 //cabeza de la pplantilla
-include 'AtlantisDash/AtlantisDash.php';
-include 'AtlantisDash/head.php';
+include 'AppStack/AppStack.php';
+include 'AppStack/head.php';
 ?>
 
 <div class="container">
@@ -23,5 +23,5 @@ include 'AtlantisDash/head.php';
 
 <?php
 //cabeza de la pplantilla
-include 'AtlantisDash/footer.php';
+include 'AppStack/footer.php';
 ?>
