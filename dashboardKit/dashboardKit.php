@@ -1,38 +1,41 @@
 <?php
-//theme light // dark 
-$themeDark = 'light';
+//MODO SIDEBAR SIDEBAR
+//SIDEBAR COMPRIMIDO // 'minimenu'
+$sidebarIcon = '';
+
+//COLOR NAVBAR
+//bg-primary // bg-danger// bg-warning// bg-info // bg-success // bg-dark
+$colorNavbar = 'bg-dark';
+
 //COLOR SIDEBAR
-//'default' = negro, // 'colored' = azul // light = blanco
-$colorSidebar = 'default';
-//POSITION SIDEBAR
-//'left // right
-$positionSidebar = 'left';
-//FORMA DE COMPORTAMIENTO SIDEBAR
-//''sticky' cada independiente // 'fixed' los dos se mueven // 'compact' sidebar comprimido
-$behaviorSidebar = 'sticky';
-//Layout BODY
-//'fluid // boxed
-$LayoutBody = 'fluid';
+//'light-sidebar' = blanco // '' = natural
+$colorSidebar = '';
 
+//COLOR LOGO SIDEBAR
+// bg-dark // bg-primary // bg-danger// bg-warning// bg-info // bg-success //
+$colorLogoSidebar = 'bg-dark';
 
+//'light' = por defecto  // 'dark'
+$themeDark = 'light';
+
+//COLOR
+$textColorLogo = 'text-white';
 
 
 // DATOS GENERALES ADMIN
-$title = 'AppStack';
+$title = 'DashboardKit';
 $mainLink = '/';
 $logoAdmin = '../public/logo/logo.png';
+$logoAdminName = '../public/logo/logo-name.png';
 
 //VER ICONOS DE MENSAJE Y NOTIFICACION
 $navSearch = false;
-$navMessages = false;
 $navNotifications = false;
-$language = false;
-
 
 //DATOS DEL USUARIO ADMIN
 $userName = 'Carlos Tucno Vasquez';
 $profile = 'Administrador';
-$photoUser = '../public/AppStack/img/avatars/avatar.jpg';
+$photoUser = '../public/dashboardkit/images/user/avatar-2.jpg';
 $emailUser = 'cc@bb.com';
 
 //MENU CERRAR O PERFIL DE ADMINISTRADOR
@@ -40,17 +43,17 @@ $menuSession = [
     [
         'text' => 'Settings',
         'url'  => 'login/password',
-        'icon' => 'fas fa-cogs',
+        'icon' => 'account_circle',
     ],
     [
         'text' => 'Activity Log',
         'url'  => 'dashboard/logs',
-        'icon' => 'fas fa-list',
+        'icon' => 'https',
     ],
     [
         'text' => 'Logout',
         'url'  => 'admin/cerrar',
-        'icon' => 'fas fa-sign-out-alt',
+        'icon' => 'chrome_reader_mode',
     ],
 ];
 
@@ -63,7 +66,10 @@ $linksSidebar = [
         'url'  => '/',
         'icon' => 'list',
     ],
-    ['header' => 'Addons'],
+    [
+        'header' => 'Addons',
+        'span'  => 'UI Components'
+    ],
     [
         'mode' => 'menu',
         'text' => 'Usuarios',
@@ -76,12 +82,15 @@ $linksSidebar = [
         'url'  => '/charts',
         'icon' => 'book-open',
     ],
-    ['header' => 'SUBMENU'],
+    [
+        'header' => 'SUBMENU',
+        'span'  => 'UI Components'
+    ],
     [
         'mode' => 'submenu',
         'text'    => 'Categorias',
         'url'    => '#',
-        'icon' => 'check-square',
+        'icon' => 'grid',
         'submenu' => [
             [
                 'text' => 'Erear',
@@ -114,7 +123,10 @@ $linksSidebar = [
         ],
     ],
 
-    ['header' => 'CLIENTES'],
+    [
+        'header' => 'CLIENTES',
+        'span'  => 'UI Components'
+    ],
 ];
 
 
@@ -124,11 +136,16 @@ $linkURL = '../public';
 
 $linksCss = [
     // 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900',
-    // $linkURL . '/backAtlaintis/assets/css/bootstrap.min.css',
-    // $linkURL . '/backAtlaintis/assets/css/atlantis.css',
-    // $linkURL . '/backAtlaintis/assets/css/demo.css',
+    $linkURL . '/dashboardkit/fonts/cryptofont.css',
+    $linkURL . '/dashboardkit/fonts/feather.css',
+    $linkURL . '/dashboardkit/fonts/fontawesome.css',
+    $linkURL . '/dashboardkit/fonts/material.css',
+    $linkURL . '/dashboardkit/css/customizer.css',
 ];
 
 $linksScript = [
-    $linkURL . '/AppStack/js/app.js',
+    $linkURL . '/dashboardkit/js/vendor-all.min.js',
+    $linkURL . '/dashboardkit/js/plugins/bootstrap.min.js',
+    $linkURL . '/dashboardkit/js/plugins/feather.min.js',
+    $linkURL . '/dashboardkit/js/pcoded.min.js',
 ];

@@ -1,28 +1,39 @@
 <?php
-//cabeza de la pplantilla
-include 'AppStack/AppStack.php';
-include 'AppStack/head.php';
+include 'dashboardKit/dashboardKit.php';
+include 'dashboardKit/head.php';
 ?>
 
-<main class="content  p-3">
-    <div class="container-fluid">
-
-        <div class="row mb-1 mb-xl-1">
-            <div class="col-auto d-none d-sm-block">
-                <h3>Dashboard vv</h3>
+<!-- [ Main Content ] start -->
+<div class="pc-container">
+    <div class="pcoded-content">
+        <!-- [ breadcrumb ] start -->
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="page-header-title">
+                            <h5 class="m-b-10">Sample Page</h5>
+                        </div>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item">Sample Page</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
         </div>
+        <!-- [ breadcrumb ] end -->
+        <!-- [ Main Content ] start -->
         <div class="row">
 
 
         </div>
-
-
+        <!-- [ Main Content ] end -->
     </div>
-</main>
+</div>
+<!-- [ Main Content ] end -->
+
 
 <?php
-//cabeza de la pplantilla
-include 'AppStack/footer.php';
+include 'dashboardKit/footer.php';
 ?>
