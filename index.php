@@ -4,22 +4,23 @@ include 'AppStack/AppStack.php';
 include 'AppStack/head.php';
 ?>
 
-<div class="container">
-    <div class="panel-header bg-primary-gradient">
-        <div class="page-inner py-2">
-            <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
-                <div>
-                    <h2 class="text-white pb-2 fw-bold">Dashboard</h2>
-                </div>
-                <div class="ml-md-auto py-0 py-md-0">
-                    <a href="#" class="btn btn-white btn-border btn-round mr-2">Manage</a>
-                    <a href="#" class="btn btn-secondary btn-round">Add Customer</a>
-                </div>
-            </div>
-        </div>
-    </div>
+<main class="content  p-3">
+    <div class="container-fluid">
 
-</div>
+        <div class="row mb-1 mb-xl-1">
+            <div class="col-auto d-none d-sm-block">
+                <h3>Dashboard vv</h3>
+            </div>
+
+        </div>
+        <div class="row">
+
+
+        </div>
+
+
+    </div>
+</main>
 
 <?php
 //cabeza de la pplantilla

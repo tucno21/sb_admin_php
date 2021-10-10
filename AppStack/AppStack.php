@@ -1,26 +1,24 @@
 <?php
-//MODOS DE  DASHBOARD
-$sidebarNormal = ['m1' => '', 'm2' => 'toggle-sidebar'];
-$sidebarNoFixed = ['m1' => 'static-sidebar', 'm2' => 'toggle-sidebar'];
-$sidebarIcon = ['m1' => 'sidebar_minimize', 'm2' => 'toggle-sidebar'];
-$sidebarOculto = ['m1' => 'overlay-sidebar', 'm2' => 'sidenav-overlay-toggler'];
-//seleccione una de arriba
-$ModoSidebar = ['wrapper' => $sidebarNormal['m1'], 'toggle' => $sidebarNormal['m2']];
-
-//blue, red, dark, purple, light-blue, green, orange, white, dark2, blue2, purple2, light-blue2, green2, orange2, red2
-$colorBase = 'dark2';
-//COLOR Logo Header
-$colorLogoHeader = $colorBase;
-//COLOR NAV
-$colorNav = $colorBase;
+//theme light // dark 
+$themeDark = 'light';
 //COLOR SIDEBAR
-$colorSidebar = $colorBase;
-//COLOR BODY //bg2 = blanco // bg1 = blanco oscuro // bg3 = plomo // dark // 
-$colorBody = '';
+//'default' = negro, // 'colored' = azul // light = blanco
+$colorSidebar = 'default';
+//POSITION SIDEBAR
+//'left // right
+$positionSidebar = 'left';
+//FORMA DE COMPORTAMIENTO SIDEBAR
+//''sticky' cada independiente // 'fixed' los dos se mueven // 'compact' sidebar comprimido
+$behaviorSidebar = 'sticky';
+//Layout BODY
+//'fluid // boxed
+$LayoutBody = 'fluid';
+
+
 
 
 // DATOS GENERALES ADMIN
-$title = 'Atlantis';
+$title = 'AppStack';
 $mainLink = '/';
 $logoAdmin = '../public/logo/logo.png';
 
@@ -28,13 +26,13 @@ $logoAdmin = '../public/logo/logo.png';
 $navSearch = false;
 $navMessages = false;
 $navNotifications = false;
-$navActions = false;
+$language = false;
 
 
 //DATOS DEL USUARIO ADMIN
 $userName = 'Carlos Tucno Vasquez';
 $profile = 'Administrador';
-$photoUser = '../public/backAtlaintis/assets/img/profile.jpg';
+$photoUser = '../public/AppStack/img/avatars/avatar.jpg';
 $emailUser = 'cc@bb.com';
 
 //MENU CERRAR O PERFIL DE ADMINISTRADOR
@@ -63,37 +61,37 @@ $linksSidebar = [
         'mode' => 'menu',
         'text' => 'Dashboard',
         'url'  => '/',
-        'icon' => 'fas fa-tachometer-alt',
+        'icon' => 'list',
     ],
     ['header' => 'Addons'],
     [
         'mode' => 'menu',
         'text' => 'Usuarios',
         'url'  => '/users',
-        'icon' => 'fas fa-user',
+        'icon' => 'user',
     ],
     [
         'mode' => 'menu',
         'text' => 'Charts',
         'url'  => '/charts',
-        'icon' => 'fas fa-table',
+        'icon' => 'book-open',
     ],
     ['header' => 'SUBMENU'],
     [
         'mode' => 'submenu',
         'text'    => 'Categorias',
         'url'    => '#',
-        'icon' => 'fas fa-certificate',
+        'icon' => 'check-square',
         'submenu' => [
             [
                 'text' => 'Erear',
                 'url'  => 'www.google.com',
-                'icon' => 'far fa-circle ',
+                'icon' => 'circle ',
             ],
             [
                 'text' => 'Editar',
                 'url'  => 'www.google.com',
-                'icon' => 'far fa-circle ',
+                'icon' => 'circle ',
             ],
         ],
     ],
@@ -101,17 +99,17 @@ $linksSidebar = [
         'mode' => 'submenu',
         'text'    => 'Productos',
         'url'    => '#',
-        'icon' => 'fab fa-product-hunt',
+        'icon' => 'check-square',
         'submenu' => [
             [
                 'text' => 'Crear',
                 'url'  => 'www.google.com',
-                'icon' => 'far fa-circle ',
+                'icon' => 'circle ',
             ],
             [
                 'text' => 'Editar',
                 'url'  => 'www.google.com',
-                'icon' => 'far fa-circle ',
+                'icon' => 'circle ',
             ],
         ],
     ],
@@ -125,19 +123,12 @@ $linksSidebar = [
 $linkURL = '../public';
 
 $linksCss = [
-    'https://fonts.googleapis.com/css?family=Lato:300,400,700,900',
-    $linkURL . '/backAtlaintis/assets/css/bootstrap.min.css',
-    $linkURL . '/backAtlaintis/assets/css/atlantis.css',
-    $linkURL . '/backAtlaintis/assets/css/demo.css',
+    // 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900',
+    // $linkURL . '/backAtlaintis/assets/css/bootstrap.min.css',
+    // $linkURL . '/backAtlaintis/assets/css/atlantis.css',
+    // $linkURL . '/backAtlaintis/assets/css/demo.css',
 ];
 
 $linksScript = [
-    $linkURL . '/backAtlaintis/assets/js/plugin/webfont/webfont.min.js',
-    $linkURL . '/backAtlaintis/assets/js/core/jquery.3.2.1.min.js',
-    $linkURL . '/backAtlaintis/assets/js/core/popper.min.js',
-    $linkURL . '/backAtlaintis/assets/js/core/bootstrap.min.js',
-    $linkURL . '/backAtlaintis/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js',
-    $linkURL . '/backAtlaintis/assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js',
-    $linkURL . '/backAtlaintis/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js',
-    $linkURL . '/backAtlaintis/assets/js/atlantis.min.js',
+    $linkURL . '/AppStack/js/app.js',
 ];
