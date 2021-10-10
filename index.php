@@ -1,39 +1,31 @@
 <?php
-include 'dashboardKit/dashboardKit.php';
-include 'dashboardKit/head.php';
+include 'HyperDash/HyperDash.php';
+include 'HyperDash/head.php';
 ?>
 
-<!-- [ Main Content ] start -->
-<div class="pc-container">
-    <div class="pcoded-content">
-        <!-- [ breadcrumb ] start -->
-        <div class="page-header">
-            <div class="page-block">
-                <div class="row align-items-center">
-                    <div class="col-md-12">
-                        <div class="page-header-title">
-                            <h5 class="m-b-10">Sample Page</h5>
-                        </div>
-                        <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item">Sample Page</li>
-                        </ul>
-                    </div>
+<!-- Start Content-->
+<div class="container-fluid">
+
+    <!-- start page title -->
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title-box">
+                <div class="page-title-right">
+                    <ol class="m-0 breadcrumb">
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Hyper</a></li>
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Pages</a></li>
+                        <li class="breadcrumb-item active">Starter</li>
+                    </ol>
                 </div>
+                <h4 class="page-title">Starter</h4>
             </div>
         </div>
-        <!-- [ breadcrumb ] end -->
-        <!-- [ Main Content ] start -->
-        <div class="row">
-
-
-        </div>
-        <!-- [ Main Content ] end -->
     </div>
-</div>
-<!-- [ Main Content ] end -->
+    <!-- end page title -->
+
+</div> <!-- container -->
 
 
 <?php
-include 'dashboardKit/footer.php';
+include 'HyperDash/footer.php';
 ?>
