@@ -1,23 +1,20 @@
 <?php
-//NAVBAR ICON NO COMPATIBLE MODO CELULAR
-$navbarIcon = false;
-
 
 // DATOS GENERALES ADMIN
-$title = 'Bubbly';
+$title = 'Dashio';
 $mainLink = '/';
 $logoAdmin = '../public/logo/logo.png';
 $logoAdminName = '../public/logo/logo-name.png';
 
 //VER ICONOS DE MENSAJE Y NOTIFICACION
-$navSearch = false;
 $navNotifications = false;
 $navMessages = false;
+$navSettings = false;
 
 //DATOS DEL USUARIO ADMIN
 $userName = 'Carlos Tucno Vasquez';
 $profile = 'Administrador';
-$photoUser = '../public/bubblyDash/img/avatar-1.jpg';
+$photoUser = '../public/dashioDash/img/ui-sam.jpg';
 $emailUser = 'cc@bb.com';
 
 //MENU CERRAR O PERFIL DE ADMINISTRADOR
@@ -47,7 +44,7 @@ $linksSidebar = [
         'mode' => 'menu',
         'text' => 'Dashboard',
         'url'  => '/',
-        'icon' => 'real-estate-1',
+        'icon' => 'fa fa-dashboard',
     ],
     [
         'header' => 'Addons',
@@ -57,13 +54,13 @@ $linksSidebar = [
         'mode' => 'menu',
         'text' => 'Usuarios',
         'url'  => '/users',
-        'icon' => 'real-estate-1',
+        'icon' => 'fa fa-desktop',
     ],
     [
         'mode' => 'menu',
         'text' => 'Charts',
         'url'  => '/charts',
-        'icon' => 'real-estate-1',
+        'icon' => 'fa fa-cogs',
     ],
     [
         'header' => 'SUBMENU',
@@ -73,7 +70,7 @@ $linksSidebar = [
         'mode' => 'submenu',
         'text'    => 'Categorias',
         'url'    => '#',
-        'icon' => 'reading-1',
+        'icon' => 'fa fa-envelope',
         'submenu' => [
             [
                 'text' => 'Erear',
@@ -91,7 +88,7 @@ $linksSidebar = [
         'mode' => 'submenu',
         'text'    => 'Productos',
         'url'    => '#',
-        'icon' => 'reading-1',
+        'icon' => 'fa fa-envelope',
         'submenu' => [
             [
                 'text' => 'Crear',
@@ -118,15 +115,20 @@ $linksSidebar = [
 $linkURL = '../public';
 
 $linksCss = [
-    'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&amp;display=swap" rel="stylesheet',
-    'https://use.fontawesome.com/releases/v5.7.1/css/all.css',
-    $linkURL . '/bubblyDash/css/style.bootstrap.css',
-    $linkURL . '/bubblyDash/css/style.mod.css',
+    // 'https://use.fontawesome.com/releases/v5.7.1/css/all.css',
+    $linkURL . '/dashioDash/vendor/bootstrap/css/bootstrap.min.css',
+    $linkURL . '/dashioDash/vendor/font-awesome/css/font-awesome.css',
+    $linkURL . '/dashioDash/css/style.css',
+    $linkURL . '/dashioDash/css/style-responsive.css',
 ];
 
 $linksScript = [
-    $linkURL . '/bubblyDash/js/bootstrap.bundle.min.js',
-    'https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js',
-    $linkURL . '/bubblyDash/js/theme.413b8ff4.js',
-
+    $linkURL . '/dashioDash/vendor/jquery/jquery.min.js',
+    $linkURL . '/dashioDash/vendor/bootstrap/js/bootstrap.min.js',
+    $linkURL . '/dashioDash/vendor/jquery-ui-1.9.2.custom.min.js',
+    $linkURL . '/dashioDash/vendor/jquery.ui.touch-punch.min.js',
+    $linkURL . '/dashioDash/vendor/jquery.dcjqaccordion.2.7.js',
+    $linkURL . '/dashioDash/vendor/jquery.scrollTo.min.js',
+    $linkURL . '/dashioDash/vendor/jquery.nicescroll.js',
+    $linkURL . '/dashioDash/js/common-scripts.js',
 ];

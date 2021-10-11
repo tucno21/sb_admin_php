@@ -3,20 +3,19 @@ include 'dashioDash/dashioDash.php';
 include 'dashioDash/head.php';
 ?>
 
-<div class="container-fluid px-lg-2 px-xl-2">
-    <!-- Breadcrumbs -->
-    <div class="page-breadcrumb">
-        <ul class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active">Contacts </li>
-        </ul>
-    </div>
-    <!-- Page Header-->
-    <div class="page-header m-0">
-        <h1 class="page-heading">ContactsXX</h1>
-    </div>
-
-</div>
+<!--main content start-->
+<section id="main-content">
+    <section class="wrapper site-min-height">
+        <h3><i class="fa fa-angle-right"></i> Blank Page</h3>
+        <div class="row mt">
+            <div class="col-lg-12">
+                <p>Place your content here.</p>
+            </div>
+        </div>
+    </section>
+    <!-- /wrapper -->
+</section>
+<!-- /MAIN CONTENT -->
 
 
 <?php
