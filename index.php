@@ -1,6 +1,6 @@
 <?php
-include 'HyperDash/HyperDash.php';
-include 'HyperDash/head.php';
+include 'sbAdmin/sbAdmin.php';
+include 'sbAdmin/head.php';
 ?>
 
 <!-- Start Content-->
@@ -27,5 +27,5 @@ include 'HyperDash/head.php';
 
 
 <?php
-include 'HyperDash/footer.php';
+include 'sbAdmin/footer.php';
 ?>
