@@ -1,21 +1,10 @@
 <?php
-//NAVBAR FIJO
-$navbarFijo = true;
-
-//sidebar dark = true // light = false;
-$SideBarDark = false;
-
-//navbar derecha 
-$navbarRight = false;
-
-//COLOR NAVBAR // beta
-//navbar-light , navbar-dark //bg-white - success- danger - info, etc
-$navbarColor = 'navbar-light bg-white';
-
+//NAVBAR ICON NO COMPATIBLE MODO CELULAR
+$navbarIcon = false;
 
 
 // DATOS GENERALES ADMIN
-$title = 'SB Admin';
+$title = 'Bubbly';
 $mainLink = '/';
 $logoAdmin = '../public/logo/logo.png';
 $logoAdminName = '../public/logo/logo-name.png';
@@ -28,7 +17,7 @@ $navMessages = false;
 //DATOS DEL USUARIO ADMIN
 $userName = 'Carlos Tucno Vasquez';
 $profile = 'Administrador';
-$photoUser = '../public/sbAdmin/img/illustrations/profiles/profile-1.png';
+$photoUser = '../public/bubblyDash/img/avatar-1.jpg';
 $emailUser = 'cc@bb.com';
 
 //MENU CERRAR O PERFIL DE ADMINISTRADOR
@@ -50,7 +39,7 @@ $menuSession = [
     ],
 ];
 
-$sivebarFooter = false;
+$linkIconsOrion = '../public/';
 
 //CREACION DE ENLACES PARA EL MENU SIDEBAR
 $linksSidebar = [
@@ -58,7 +47,7 @@ $linksSidebar = [
         'mode' => 'menu',
         'text' => 'Dashboard',
         'url'  => '/',
-        'icon' => 'bar-chart',
+        'icon' => 'real-estate-1',
     ],
     [
         'header' => 'Addons',
@@ -68,13 +57,13 @@ $linksSidebar = [
         'mode' => 'menu',
         'text' => 'Usuarios',
         'url'  => '/users',
-        'icon' => 'bar-chart',
+        'icon' => 'real-estate-1',
     ],
     [
         'mode' => 'menu',
         'text' => 'Charts',
         'url'  => '/charts',
-        'icon' => 'bar-chart',
+        'icon' => 'real-estate-1',
     ],
     [
         'header' => 'SUBMENU',
@@ -84,7 +73,7 @@ $linksSidebar = [
         'mode' => 'submenu',
         'text'    => 'Categorias',
         'url'    => '#',
-        'icon' => 'activity',
+        'icon' => 'reading-1',
         'submenu' => [
             [
                 'text' => 'Erear',
@@ -102,7 +91,7 @@ $linksSidebar = [
         'mode' => 'submenu',
         'text'    => 'Productos',
         'url'    => '#',
-        'icon' => 'activity',
+        'icon' => 'reading-1',
         'submenu' => [
             [
                 'text' => 'Crear',
@@ -129,13 +118,15 @@ $linksSidebar = [
 $linkURL = '../public';
 
 $linksCss = [
-    // 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900',
-    $linkURL . '/sbAdmin/css/styles.css',
+    'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&amp;display=swap" rel="stylesheet',
+    'https://use.fontawesome.com/releases/v5.7.1/css/all.css',
+    $linkURL . '/bubblyDash/css/style.bootstrap.css',
+    $linkURL . '/bubblyDash/css/style.mod.css',
 ];
 
 $linksScript = [
-    $linkURL . '/sbAdmin/js/font-awesome.all.min.js',
-    $linkURL . '/sbAdmin/js/feather.min.js',
-    $linkURL . '/sbAdmin/js/bootstrap.bundle.min.js',
-    $linkURL . '/sbAdmin/js/scripts.js',
+    $linkURL . '/bubblyDash/js/bootstrap.bundle.min.js',
+    'https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js',
+    $linkURL . '/bubblyDash/js/theme.413b8ff4.js',
+
 ];
