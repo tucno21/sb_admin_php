@@ -1,6 +1,6 @@
 <?php
-include 'sbAdmin/sbAdmin.php';
-include 'sbAdmin/head.php';
+include 'bubblyDash/bubblyDash.php';
+include 'bubblyDash/head.php';
 ?>
 
 <main>
@@ -34,5 +34,5 @@ include 'sbAdmin/head.php';
 
 
 <?php
-include 'sbAdmin/footer.php';
+include 'bubblyDash/footer.php';
 ?>
