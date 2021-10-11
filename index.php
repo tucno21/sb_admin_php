@@ -1,6 +1,6 @@
 <?php
-include 'bubblyDash/bubblyDash.php';
-include 'bubblyDash/head.php';
+include 'dashioDash/dashioDash.php';
+include 'dashioDash/head.php';
 ?>
 
 <div class="container-fluid px-lg-2 px-xl-2">
@@ -20,5 +20,5 @@ include 'bubblyDash/head.php';
 
 
 <?php
-include 'bubblyDash/footer.php';
+include 'dashioDash/footer.php';
 ?>
