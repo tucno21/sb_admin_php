@@ -3,27 +3,34 @@ include 'sbAdmin/sbAdmin.php';
 include 'sbAdmin/head.php';
 ?>
 
-<!-- Start Content-->
-<div class="container-fluid">
-
-    <!-- start page title -->
-    <div class="row">
-        <div class="col-12">
-            <div class="page-title-box">
-                <div class="page-title-right">
-                    <ol class="m-0 breadcrumb">
-                        <li class="breadcrumb-item"><a href="javascript: void(0);">Hyper</a></li>
-                        <li class="breadcrumb-item"><a href="javascript: void(0);">Pages</a></li>
-                        <li class="breadcrumb-item active">Starter</li>
-                    </ol>
+<main>
+    <header class="page-header page-header-compact page-header-light border-bottom bg-white mb-4">
+        <div class="container-xl px-4">
+            <div class="page-header-content">
+                <div class="row align-items-center justify-content-between pt-3">
+                    <div class="col-auto mb-3">
+                        <h1 class="page-header-title">
+                            <div class="page-header-icon"><i data-feather="file"></i></div>
+                            modelo
+                        </h1>
+                    </div>
+                    <div class="col-12 col-xl-auto mb-3">
+                        <button class="btn btn-sm btn-light text-primary active me-2">boton 1</button>
+                        <button class="btn btn-sm btn-light text-primary me-2">boton 2</button>
+                        <button class="btn btn-sm btn-light text-primary">boton 3</button>
+                    </div>
                 </div>
-                <h4 class="page-title">Starter</h4>
             </div>
         </div>
+    </header>
+    <!-- Main page content-->
+    <div class="container-xl px-4">
+        <div class="card">
+            <div class="card-header">Header Example</div>
+            <div class="card-body">ccccccccccccc cccccccccccccccccccccccccc</div>
+        </div>
     </div>
-    <!-- end page title -->
-
-</div> <!-- container -->
+</main>
 
 
 <?php
