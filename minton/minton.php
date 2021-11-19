@@ -1,60 +1,32 @@
 <?php
-//THE DARK
-$themeDark = false;
-
-//NAVBAR FIJO
-$navbarFijo = true;
-
-//sidebar dark = true // light = false;
-$SideBarTheme = true;
-
-//SIDEBAR COMPRIMIDO 
-$sidebarIcon = false;
-
-//SidebarScrollable
-$SidebarScrollable = false;
-
-//COLOR LOGO SIDEBAR
-// bg-dark // bg-primary // bg-danger// bg-warning// bg-info // bg-success //
-$colorLogoSidebar = 'bg-dark';
-
-//COLOR
-$textColorLogo = 'text-white';
-
 
 // DATOS GENERALES ADMIN
-$title = 'HyperDash';
+$title = 'Minton';
+$titleShort = 'M';
 $mainLink = '/';
 $logoAdmin = '../public/logo/logo.png';
-$logoAdminName = '../public/logo/logo-name.png';
-
-//VER ICONOS DE MENSAJE Y NOTIFICACION
-$navSearch = false;
-$navNotifications = false;
-$language = false;
 
 //DATOS DEL USUARIO ADMIN
 $userName = 'Carlos Tucno Vasquez';
-$profile = 'Administrador';
-$photoUser = '../public/HyperDash/images/users/avatar-1.jpg';
-$emailUser = 'cc@bb.com';
+$photoUser = '../public/image/avatar.jpg';
+
 
 //MENU CERRAR O PERFIL DE ADMINISTRADOR
 $menuSession = [
     [
-        'text' => 'Settings',
-        'url'  => 'login/password',
-        'icon' => 'mdi mdi-account-edit me-1',
+        'text' => 'Administrador',
+        'url'  => '#',
+        'icon' => 'far fa-user-circle',
     ],
     [
-        'text' => 'Activity Log',
+        'text' => 'Settings',
         'url'  => 'dashboard/logs',
-        'icon' => 'mdi mdi-lock-outline me-1',
+        'icon' => 'fas fa-user-cog',
     ],
     [
         'text' => 'Logout',
         'url'  => 'admin/cerrar',
-        'icon' => 'mdi mdi-logout me-1',
+        'icon' => 'fas fa-sign-out-alt',
     ],
 ];
 
@@ -62,46 +34,47 @@ $menuSession = [
 //CREACION DE ENLACES PARA EL MENU SIDEBAR
 $linksSidebar = [
     [
+        'header' => 'Navigation',
+    ],
+    [
         'mode' => 'menu',
         'text' => 'Dashboard',
         'url'  => '/',
-        'icon' => 'uil-home-alt',
+        'icon' => 'far fa-comment',
     ],
     [
         'header' => 'Addons',
-        'span'  => 'UI Components'
     ],
     [
         'mode' => 'menu',
         'text' => 'Usuarios',
         'url'  => '/users',
-        'icon' => 'uil-calender',
+        'icon' => 'far fa-comment',
     ],
     [
         'mode' => 'menu',
         'text' => 'Charts',
         'url'  => '/charts',
-        'icon' => 'uil-briefcase',
+        'icon' => 'far fa-comment',
     ],
     [
         'header' => 'SUBMENU',
-        'span'  => 'UI Components'
     ],
     [
         'mode' => 'submenu',
         'text'    => 'Categorias',
         'url'    => '#',
-        'icon' => 'uil-rss',
+        'icon' => 'fas fa-th-list',
         'submenu' => [
             [
-                'text' => 'Erear',
+                'text' => 'Crear',
                 'url'  => 'www.google.com',
-                'icon' => 'circle ',
+                'icon' => 'fas fa-circle',
             ],
             [
                 'text' => 'Editar',
                 'url'  => 'www.google.com',
-                'icon' => 'circle ',
+                'icon' => 'fas fa-circle',
             ],
         ],
     ],
@@ -109,17 +82,17 @@ $linksSidebar = [
         'mode' => 'submenu',
         'text'    => 'Productos',
         'url'    => '#',
-        'icon' => 'uil-clipboard-alt',
+        'icon' => 'fas fa-th-list',
         'submenu' => [
             [
                 'text' => 'Crear',
                 'url'  => 'www.google.com',
-                'icon' => 'circle ',
+                'icon' => 'fas fa-circle',
             ],
             [
                 'text' => 'Editar',
                 'url'  => 'www.google.com',
-                'icon' => 'circle ',
+                'icon' => 'fas fa-circle',
             ],
         ],
     ],
@@ -137,7 +110,8 @@ $linkURL = '../public';
 
 $linksCss = [
     // 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900',
-    $linkURL . '/HyperDash/css/icons.min.css',
+    $linkURL . '/built/css/bootstrap.min.css',
+    $linkURL . '/built/css/app.min.css',
 ];
 
 $linksScript = [
