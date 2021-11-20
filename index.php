@@ -28,7 +28,7 @@ include 'sbAdmin/head.php';
         <div class="card mb-4">
             <div class="card-header">Extended DataTables</div>
             <div class="card-body">
-                <table id="datatablesSimple">
+                <table id="datatablesSimple" class="table table-striped">
                     <thead>
                         <tr>
                             <th>Name</th>
