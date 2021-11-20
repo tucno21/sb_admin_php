@@ -17,7 +17,7 @@
 <body class="<?php echo $navbarRight ? 'layout-rtl' : '' ?>  <?php echo $navbarFijo ? 'nav-fixed' : '' ?> ">
     <nav class="topnav navbar navbar-expand shadow justify-content-between justify-content-sm-start <?= $navbarColor ?>" id="sidenavAccordion">
         <!-- Sidenav Toggle Button-->
-        <button class="btn btn-icon btn-transparent-dark order-1 order-lg-0 me-2 ms-lg-2 me-lg-0" id="sidebarToggle"><i class="fas fa-bars"></i></button>
+        <button class="btn btn-icon btn-transparent-light order-1 order-lg-0 me-2 ms-lg-2 me-lg-0" id="sidebarToggle"><i class="fas fa-bars"></i></button>
         <!-- Navbar Brand-->
         <a class="navbar-brand pe-3 ps-4 ps-lg-2" href="<?= $mainLink ?>"><?= $title ?></a>
         <?php if ($navSearch == true) : ?>
@@ -38,7 +38,7 @@
                 <!-- Navbar Search Dropdown-->
                 <!-- * * Note: * * Visible only below the lg breakpoint-->
                 <li class="nav-item dropdown no-caret me-3 d-lg-none">
-                    <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="searchDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="search"></i></a>
+                    <a class="btn btn-icon btn-transparent-light dropdown-toggle" id="searchDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="search"></i></a>
                     <!-- Dropdown - Search-->
                     <div class="dropdown-menu dropdown-menu-end p-3 shadow animated--fade-in-up" aria-labelledby="searchDropdown">
                         <form class="form-inline me-auto w-100">
@@ -54,7 +54,7 @@
             <?php if ($navNotifications == true) : ?>
                 <!-- Alerts Dropdown-->
                 <li class="nav-item dropdown no-caret d-sm-block me-3 dropdown-notifications">
-                    <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="navbarDropdownAlerts" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-bell"></i></a>
+                    <a class="btn btn-icon btn-transparent-light dropdown-toggle" id="navbarDropdownAlerts" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-bell"></i></a>
                     <div class="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up" aria-labelledby="navbarDropdownAlerts">
                         <h6 class="dropdown-header dropdown-notifications-header">
                             <i class="me-2 far fa-bell"></i>
@@ -104,7 +104,7 @@
             <?php if ($navMessages == true) : ?>
                 <!-- Messages Dropdown-->
                 <li class="nav-item dropdown no-caret d-sm-block me-3 dropdown-notifications">
-                    <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="navbarDropdownMessages" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-envelope"></i></a>
+                    <a class="btn btn-icon btn-transparent-light dropdown-toggle" id="navbarDropdownMessages" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-envelope"></i></a>
                     <div class="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up" aria-labelledby="navbarDropdownMessages">
                         <h6 class="dropdown-header dropdown-notifications-header">
                             <i class="me-2 far fa-envelope"></i>
@@ -170,7 +170,7 @@
 
             <!-- User Dropdown-->
             <li class="nav-item dropdown no-caret dropdown-user me-3 me-lg-4">
-                <a class="btn btn-icon btn-transparent-dark dropdown-toggle" id="navbarDropdownUserImage" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="img-fluid" src="<?= $photoUser ?>" /></a>
+                <a class="btn btn-icon btn-transparent-light dropdown-toggle" id="navbarDropdownUserImage" href="javascript:void(0);" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="img-fluid" src="<?= $photoUser ?>" /></a>
                 <div class="dropdown-menu dropdown-menu-end border-0 shadow animated--fade-in-up" aria-labelledby="navbarDropdownUserImage">
                     <h6 class="dropdown-header d-flex align-items-center">
                         <img class="dropdown-user-img" src="<?= $photoUser ?>" />

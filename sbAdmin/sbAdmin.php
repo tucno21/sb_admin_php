@@ -3,14 +3,15 @@
 $navbarFijo = true;
 
 //sidebar dark = true // light = false;
-$SideBarDark = false;
+$SideBarDark = true;
 
 //navbar derecha 
 $navbarRight = false;
 
 //COLOR NAVBAR // beta
 //navbar-light , navbar-dark //bg-white - success- danger - info, etc
-$navbarColor = 'navbar-light bg-white';
+// $navbarColor = 'navbar-light bg-white';
+$navbarColor = 'navbar-dark bg-dark';
 
 
 
