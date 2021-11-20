@@ -131,12 +131,17 @@ $linkURL = '../public';
 
 $linksCss = [
     // 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900',
+    'https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css',
     $linkURL . '/sbAdmin/css/styles.css',
 ];
 
 $linksScript = [
     // $linkURL . '/sbAdmin/js/feather.min.js',
+    'https://code.jquery.com/jquery-3.6.0.js',
+    'https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js',
     'https://kit.fontawesome.com/1d88763075.js',
+    'https://cdn.jsdelivr.net/npm/simple-datatables@latest',
     $linkURL . '/sbAdmin/js/bootstrap.bundle.min.js',
     $linkURL . '/sbAdmin/js/scripts.js',
+    $linkURL . '/sbAdmin/js/datatable.js',
 ];
