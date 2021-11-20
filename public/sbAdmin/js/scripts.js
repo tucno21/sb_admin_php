@@ -4,8 +4,6 @@
     * Licensed under SEE_LICENSE (https://github.com/StartBootstrap/sb-admin-pro/blob/master/LICENSE)
     */
     window.addEventListener('DOMContentLoaded', event => {
-    // Activate feather
-    feather.replace();
 
     // Enable tooltips globally
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
