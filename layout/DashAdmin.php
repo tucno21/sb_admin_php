@@ -1,69 +1,49 @@
 <?php
-//NAVBAR FIJO
-$navbarFijo = true;
-
-//sidebar dark = true // light = false;
-$SideBarDark = true;
-
-//navbar derecha 
-$navbarRight = false;
-
-//COLOR NAVBAR // beta
-//navbar-light , navbar-dark //bg-white - success- danger - info, etc
-// $navbarColor = 'navbar-light bg-white';
-$navbarColor = 'navbar-dark bg-dark';
-
-
 
 // DATOS GENERALES ADMIN
-$title = 'SB Admin';
+$title = 'Vlady';
 $mainLink = '/';
 $logoAdmin = '../public/logo/logo.png';
-$logoAdminName = '../public/logo/logo-name.png';
 
 //VER ICONOS DE MENSAJE Y NOTIFICACION
 $navSearch = false;
-$navNotifications = true;
+$navNotifications = false;
 $navMessages = true;
 
 //DATOS DEL USUARIO ADMIN
 $userName = 'Carlos Tucno Vasquez';
 $profile = 'Administrador';
 $photoUser = '../public/img/user.png';
-$emailUser = 'cc@bb.com';
+// $emailUser = 'cc@bb.com';
 
 //MENU CERRAR O PERFIL DE ADMINISTRADOR
 $menuSession = [
     [
         'text' => 'Settings',
         'url'  => 'login/password',
-        'icon' => 'settings',
+        'icon' => 'fa fa-cog',
     ],
     [
         'text' => 'Activity Log',
         'url'  => 'dashboard/logs',
-        'icon' => 'log-out',
+        'icon' => 'fas fa-clipboard-list',
     ],
     [
         'text' => 'Logout',
         'url'  => 'admin/cerrar',
-        'icon' => 'log-out',
+        'icon' => 'fa fa-sign-out',
     ],
 ];
 
-$sivebarFooter = false;
 
 //CREACION DE ENLACES PARA EL MENU SIDEBAR
 $linksSidebar = [
+    ['header' => 'Dashboard'],
     [
         'mode' => 'menu',
         'text' => 'Dashboard',
         'url'  => '/',
-        'icon' => 'fas fa-pager',
-    ],
-    [
-        'header' => 'Addons',
-        'span'  => 'UI Components'
+        'icon' => 'fa fa-dashboard',
     ],
     [
         'mode' => 'menu',
@@ -77,10 +57,7 @@ $linksSidebar = [
         'url'  => '/charts',
         'icon' => 'fas fa-chart-bar',
     ],
-    [
-        'header' => 'SUBMENU',
-        'span'  => 'UI Components'
-    ],
+    ['header' => 'submenus'],
     [
         'mode' => 'submenu',
         'text'    => 'Categorias',
@@ -117,11 +94,6 @@ $linksSidebar = [
             ],
         ],
     ],
-
-    [
-        'header' => 'CLIENTES',
-        'span'  => 'UI Components'
-    ],
 ];
 
 
@@ -130,19 +102,19 @@ $linksSidebar = [
 $linkURL = '../public';
 
 $linksCss = [
-    // 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900',
-    // 'https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css',
+    $linkURL . '/buildDash/css/bootstrap.css',
+    'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css',
     'https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css',
-    $linkURL . '/sbAdmin/css/styles.css',
+    'https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css',
+    $linkURL . '/buildDash/css/styles.css',
 ];
 
 $linksScript = [
-    'https://code.jquery.com/jquery-3.6.0.js',
+    'https://kit.fontawesome.com/1d88763075.js',
+    $linkURL . '/buildDash/js/bootstrap.bundle.js',
+    'https://code.jquery.com/jquery-3.5.1.js',
     'https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js',
     'https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js',
-    'https://kit.fontawesome.com/1d88763075.js',
-    // 'https://cdn.jsdelivr.net/npm/simple-datatables@latest',
-    $linkURL . '/sbAdmin/js/bootstrap.bundle.min.js',
-    $linkURL . '/sbAdmin/js/scripts.js',
-    $linkURL . '/sbAdmin/js/datatable.js',
+    'https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js',
+    $linkURL . '/buildDash/js/main.js',
 ];
